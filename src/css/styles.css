@@ -1,0 +1,498 @@
+#app {
+    font-family: 'Montserrat';
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: left;
+    color: black;
+    margin: 0 auto;
+    max-width: 1440px;
+    background: #fff;
+}
+
+body {
+    background: #e5e5e5;
+}
+
+.container {
+    padding: 6%;
+}
+
+.form {
+    margin: 0 10px 0 0;
+    text-align: left;
+    width: 100%;
+    max-width: 614px;
+}
+
+.h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 180%;
+    margin: 0 auto;
+}
+
+.h2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.main {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.map {
+    margin: 0 0 10px;
+    text-align: left;
+    width: 100%;
+    max-width: 578px;
+}
+
+.selected {
+    font-weight: bold !important;
+}
+
+.selected:hover {
+    color: #000 !important;
+}
+
+/* AdressBlock */
+
+.arrows {
+    color: #000;
+    font-weight: 400;
+    vertical-align: middle;
+    user-select: none; 
+    cursor: pointer;
+}
+
+.contacts {
+    padding: 8%;
+    box-shadow: 0px 0px 15px rgba(184, 178, 178, 0.5);
+}
+
+.contacts-header {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 180%;
+    margin: 0 auto 24px;
+}
+
+.hours {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: #737373;
+}
+
+#map {
+    padding: 0;
+    margin: 0;
+    max-width: 578px;
+    max-height: 440px;
+    width: 100%;
+    height: 100%;
+}
+
+.mailto {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    color: #D3232A;
+    text-decoration: none
+}
+
+.number {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 140%;
+    color: black;
+    text-decoration: none;
+}
+
+/* ResumeForm */
+
+.attach-file {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.attach-file .docs {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 10px;
+    cursor: pointer;
+    transform: none;
+}
+
+.attach-file span {
+    font-size: 40px;
+    color: #D3232A;
+    transform: rotate(45deg);
+}
+
+.attach-file-names {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #737373;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button.send-form:disabled {
+    opacity: 0.6;
+}
+
+.checked {
+    font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48
+
+}
+
+.choose-vacancy-label {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 180%;
+    color: #737373;
+    opacity: 0.6;
+    user-select: none; 
+}
+
+.current-vacancy {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 180%;
+    color: #000;
+    user-select: none; 
+}
+
+.delete-icon {
+    cursor: pointer;
+    color: #D3232A;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+.div-input {
+    height: 89px;
+    margin-bottom: 40px;
+    border-bottom: 2px #F4F5F7 solid;
+    position: relative;
+}
+
+.div-input input,
+.div-input textarea {
+    font-family: 'Montserrat';
+    font-style: normal;
+    width: 100%;
+    height: 83px;
+    font-size: 24px;
+    border-color: transparent;
+    line-height: 43.2px;
+}
+
+.div-input select:focus {
+    border-bottom: 2px #D3232A solid !important;
+}
+
+.div-input select option:first-child {
+    display: none;
+}
+
+.div-input-about,
+.div-input-about textarea {
+    height: 160px !important;
+}
+
+input:focus,
+textarea:focus {
+    outline:none;
+    border-bottom: 2px black solid;
+}
+
+.input-error {
+    border-bottom: 2px #D3232A solid !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #737373;
+    opacity: 0.6;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    user-select: none;
+}
+
+.privacy {
+    display: flex;
+}
+
+.privacy a {
+    color: #D3232A;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.privacy a:hover {
+    text-decoration: underline;
+}
+
+.privacy .material-symbols-outlined {
+    height: 24px;
+    width: 24px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.privacy label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.send-form {
+    max-width: 614px;
+    width: 100%;
+    background: #D3232A;
+    border-radius: 8px;
+    border: 2px solid #D3232A;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color: #fff;
+    padding: 8px 40px;
+    cursor: pointer;
+}
+
+select {
+    background: #fff;
+}
+
+textarea {
+    padding-top: 25px;
+}
+
+textarea::placeholder {
+    color: #737373;
+    opacity: 0.6;
+}
+
+.vacancy-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.vacancy-select {
+    position: relative;
+}
+
+.vacancy-select .vacancy-list {
+    position: absolute;
+    background: white;
+    border-top: 2px solid #D3232A;
+    box-shadow: 0px 0px 15px rgb(184 178 178 / 50%);
+    z-index: 99;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.vacancy-select .vacancy-list p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 180%;
+    list-style-type: none;
+    margin: 0;
+    padding: 16px 32px;
+}
+
+.vacancy-select .vacancy-list p:first-child {
+    padding-top: 24px;
+}
+
+.vacancy-select .vacancy-list p:last-child {
+    padding-bottom: 24px;
+}
+
+.vacancy-select .vacancy-list p:hover {
+    color: #D3232A;
+    cursor: pointer;
+}
+
+.visible {
+    display: block;
+}
+
+.visible-label,
+textarea:focus + label,
+input:focus + label {
+    display: block;
+    color: #737373;
+    opacity: 0.6;
+    font-size: 14px;
+    line-height: 25.2px;
+    position: absolute;
+    top: 0;
+    margin-left: 2px;
+}
+
+.hidden-label {
+    display: none;
+}
+
+/* ChooseCity */
+
+.city-select {
+    position: relative;
+}
+
+.city-select .city-list {
+    position: absolute;
+    background: white;
+    box-shadow: 0px 0px 15px rgb(184 178 178 / 50%);
+    z-index: 99;
+    width: 322px;
+    margin: 0 auto;
+    left: -30px;
+    top: 20px;
+}
+
+.city-select .city-list p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 180%;
+    list-style-type: none;
+    margin: 0;
+    padding: 16px 32px;
+}
+
+.city-select .city-list p:first-child {
+    padding-top: 24px;
+}
+
+.city-select .city-list p:last-child {
+    padding-bottom: 24px;
+}
+
+.city-select .city-list p:hover {
+    color: #D3232A;
+    cursor: pointer;
+}
+
+.current-city {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 180%;
+    color: #D3232A;
+    border: none;
+    border-bottom: 2px #D3232A dashed;
+    user-select: none; 
+    cursor: pointer;
+}
+
+.red-arrows {
+    color: #D3232A;
+    font-weight: 400;
+    vertical-align: middle;
+    user-select: none; 
+    cursor: pointer;
+}
+
+/* mobile response */
+
+@media (max-width: 950px) {
+    .hours {
+        font-size: 14px;
+    }
+    .number {
+        font-size: 35px;
+    }
+    #map {
+        max-height: 350px;
+    }
+}
+
+@media (max-width: 860px) {
+    .current-city {
+      font-size: 22px;
+    }
+    .form {
+        max-width: none;
+    }
+    .hours {
+        font-size: 13px;
+    }
+    .main {
+        flex-flow: row wrap;
+    }
+    .mailto {
+        font-size: 23px;
+    }
+    #map {
+        max-height: 300px;
+        max-width: none;
+    }   
+    .map {
+        margin-top: 35px;
+        width: 100%;
+        max-width: none;
+    }
+    .number {
+        font-size: 30px;;
+    }
+    .send-form {
+      max-width: none;
+    }
+}
+
+@media (max-width: 520px) {
+    .h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .city-select .city-list {
+        left: 0;
+    }
+    .h1 {
+        font-size: 24px;
+    }
+    .mailto {
+        font-size: 23px;
+    }
+}
